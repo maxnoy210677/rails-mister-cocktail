@@ -5,5 +5,5 @@ class Ingredient < ApplicationRecord
 
   validates :name, uniqueness: true, presence: true
 
-
+  default_scope { order(name: :asc) }
 end

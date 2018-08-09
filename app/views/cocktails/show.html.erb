@@ -2,7 +2,7 @@
 
 <h4>This cocktail is made of:</h4>
 <% @cocktail.doses.each do |dose| %>
-<p><%= dose.amount %> of <%= dose.ingredient.name %></p>
+<p><%= dose.description %> of <%= dose.ingredient.name %></p>
 <% end %>
 
 <%= link_to '+ Add a new dose', new_cocktail_dose_path(@cocktail) %>
